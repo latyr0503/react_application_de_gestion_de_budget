@@ -11,7 +11,8 @@ export const AjoutRevenu = () => {
     event.preventDefault();
 
     try {
-      await axios.post("http://localhost:3000/revenu", { titre, montant });
+      // await axios.post("http://localhost:3000/revenu", { titre, montant });
+      await axios.post("https://nestjs-application-de-gestion-de-budge.onrender.com/revenu", { titre, montant });
       setTitre("");
       setMontant("");
       alert("Revenu ajoutée avec succès !");

@@ -15,7 +15,7 @@ const Dashboard = () => {
     // Récupérer les données des dépenses
     const fetchDepenses = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/depense");
+        const response = await axios.get("https://nestjs-application-de-gestion-de-budge.onrender.com/depense");
         setDepenses(response.data);
       } catch (error) {
         setError("Erreur lors de la récupération des dépenses");
@@ -26,7 +26,7 @@ const Dashboard = () => {
     // Récupérer les données des revenus
     const fetchRevenus = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/revenu");
+        const response = await axios.get("https://nestjs-application-de-gestion-de-budge.onrender.com/revenu");
         setRevenus(response.data);
       } catch (error) {
         setError("Erreur lors de la récupération des revenus");

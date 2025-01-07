@@ -11,7 +11,7 @@ export const AjoutDepense = () => {
     event.preventDefault();
 
     try {
-      await axios.post("http://localhost:3000/depense", { titre, montant });
+      await axios.post("https://nestjs-application-de-gestion-de-budge.onrender.com/depense", { titre, montant });
       setTitre("");
       setMontant("");
       alert("Dépense ajoutée avec succès !");
